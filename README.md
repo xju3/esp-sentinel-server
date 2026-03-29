@@ -19,6 +19,7 @@ npm run dev
 VITE_API_BASE=http://localhost:3000
 VITE_MACHINE_STATE_PATH=/machine-state
 VITE_RMS_REPORT_PATH=/rms-report
+VITE_DEV_PORT=5173
 ```
 
 ## 查询参数
