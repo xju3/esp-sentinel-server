@@ -268,7 +268,10 @@ function App() {
                 </thead>
                 <tbody className="divide-y divide-slate-100">
                   {items.map((row, index) => (
-                    <tr key={row.id ? String(row.id) : `row-${index}`} className="hover:bg-slate-50">
+                    <tr
+                      key={row.id ? String(row.id) : `row-${index}`}
+                      className="odd:bg-slate-50/60 hover:bg-slate-100 transition-colors"
+                    >
                       {columns.map((col) => (
                         <td key={col} className="whitespace-nowrap px-4 py-3 text-slate-700">
                           {formatValue(row[col])}
